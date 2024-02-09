@@ -37,7 +37,7 @@ const winPattern= [
       }
       box.disabled= true;
       count++;
-      let iswinner= checkWinner();
+      let isWinner= checkWinner();
       if(count===9 && !isWinner){
         gameDraw();
       }
