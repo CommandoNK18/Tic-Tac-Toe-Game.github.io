@@ -55,14 +55,14 @@ const winPattern= [
   };
   const enableBoxes=()=>{
     for(let box of boxes){
-      box.disable=false;
+      box.disabled=false;
       box.innerText="";
     }
   };
   const showWinner=(winner)=>{
     msg.innerText=`Congratulations,winner is ${winner}`;
     msgContainer.classList.remove("hide");
-    disable.Boxes();
+    disableBoxes();
   };
   const checkWinner=()=>{
     for(let pattern of winPattern){
